@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From The Blog</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #fff;
+        color: #333;
+      }
+
+      .blog {
+        padding: 50px 80px;
+        text-align: center;
+      }
+
+      .blog-header h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+      }
+
+      .blog-header p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 40px;
+      }
+
+      .blog-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .blog-item {
+        text-align: left;
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .blog-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgb(214, 214, 214);
+      }
+
+      .blog-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .blog-item h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 15px;
+        line-height: 1.4;
+      }
+
+      .blog-meta {
+        font-size: 0.9rem;
+        color: #1500ff;
+        margin: 0 15px 10px;
+        font-style: italic;
+      }
+
+      .blog-meta .author {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .blog-desc {
+        font-size: 0.95rem;
+        color: #555555;
+        margin: 0 15px 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        margin: 0 15px 20px;
+        padding: 10px 20px;
+        background-color: #001ca5;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #002aff;
+      }
+
+      @media (max-width: 992px) {
+        .blog-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .blog-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="blog">
+      <div class="blog-header">
+        <h2>From The Blog</h2>
+        <p>Latest Event & News</p>
+      </div>
+
+      <div class="blog-container">
+        <div class="blog-item">
+          <img
+            src="https://images.pexels.com/photos/8376383/pexels-photo-8376383.jpeg"
+            alt="Blog Image 1"
+          />
+          <h3>
+            Handful Of Model Sentence Of Model Sentence Of Model Structures
+          </h3>
+          <p class="blog-meta">
+            By <span class="author">mark grage</span> | 3 Comments
+          </p>
+          <p class="blog-desc">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some look even slightly
+            believable.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="blog-item">
+          <img
+            src="https://images.pexels.com/photos/15887468/pexels-photo-15887468.jpeg"
+            alt="Blog Image 2"
+          />
+          <h3>
+            Handful Of Model Sentence Of Model Sentence Of Model Structures
+          </h3>
+          <p class="blog-meta">
+            By <span class="author">mark grage</span> | 3 Comments
+          </p>
+          <p class="blog-desc">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some look even slightly
+            believable.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="blog-item">
+          <img
+            src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg"
+            alt="Blog Image 3"
+          />
+          <h3>
+            Handful Of Model Sentence Of Model Sentence Of Model Structures
+          </h3>
+          <p class="blog-meta">
+            By <span class="author">mark grage</span> | 3 Comments
+          </p>
+          <p class="blog-desc">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some look even slightly
+            believable.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
